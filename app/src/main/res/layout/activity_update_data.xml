@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".updateData">
+
+    <TextView
+        android:id="@+id/studentUpdate_title_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Student Data Form"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/student_UfullName_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Full Name"
+        android:layout_margin="10dp"
+        android:layout_below="@id/studentUpdate_title_ID"/>
+
+    <EditText
+        android:id="@+id/student_Uaddress_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter full Address"
+        android:layout_margin="10dp"
+        android:layout_below="@id/student_UfullName_ID"/>
+
+    <EditText
+        android:id="@+id/student_Uemail_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter EmailId"
+        android:layout_margin="10dp"
+        android:layout_below="@id/student_Uaddress_ID"/>
+
+    <EditText
+        android:id="@+id/student_Ucontact_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Mobile No"
+        android:layout_margin="10dp"
+        android:layout_below="@id/student_Uemail_ID"/>
+
+    <EditText
+        android:id="@+id/student_Ucollage_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Collage Name"
+        android:layout_margin="10dp"
+        android:layout_below="@id/student_Ucontact_ID"/>
+
+
+    <Button
+        android:id="@+id/updateStudent_BTN_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/student_Ucollage_ID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Update"
+        android:textSize="15sp" />
+
+</RelativeLayout>

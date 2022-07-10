@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddStaff">
+<ScrollView
+    android:id="@+id/scrollView_ID"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <TextView
+        android:id="@+id/staffFrom_title_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="staff Form"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/staff_fullName_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Full Name"
+        android:layout_margin="10dp"
+        android:layout_below="@id/staffFrom_title_ID"/>
+
+
+
+    <EditText
+        android:id="@+id/staff_email_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter EmailId"
+        android:layout_margin="10dp"
+        android:layout_below="@id/staff_fullName_ID"/>
+
+    <EditText
+        android:id="@+id/staff_contact_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Mobile No"
+        android:layout_margin="10dp"
+        android:layout_below="@id/staff_email_ID"/>
+
+    <EditText
+        android:id="@+id/staff_postName_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/staff_contact_ID"
+        android:layout_margin="10dp"
+        android:hint="Enter Post Name" />
+
+    <EditText
+        android:id="@+id/staff_address_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/staff_postName_ID"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Enter full Address" />
+
+<!--    <Spinner-->
+<!--        android:id="@+id/spinner_fees_ID"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/staff_collage_ID"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:entries="@array/fee_structure_entries" />-->
+    </RelativeLayout>
+</ScrollView>
+    <Button
+        android:id="@+id/insertstaff_BTN_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scrollView_ID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Add Staff"
+        android:textSize="15sp" />
+
+</RelativeLayout>

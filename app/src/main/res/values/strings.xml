@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Hostel Life</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <string name="ruleNoOne"><![CDATA[Smoking, Alcohol & Narcotic consumption is strictly prohibited in and around the Hostel premises, Strict action will be taken against offenders.]]></string>
+    <string name="ruleNoTwo"><![CDATA[Students must keep the Campus & Rooms clean. Defacing walls, equipment, furniture etc., is strictly prohibited.]]></string>
+    <string name="ruleNoThree">Students must turn off all the electrical equipments &amp; lights before leaving their rooms.</string>
+    <string name="ruleNoFour">Students are not allowed to use electric stoves, heaters etc in rooms except in designated places.</string>
+    <string name="ruleNoFive">Food will be served only in the designated Dining Hall(s) and only during the specified timings. Wasting food &amp; water will not be encouraged.</string>
+    <string name="ruleNoSix">Students are not allowed to organize any group activities in their room.</string>
+    <string name="about_US">Our hostel is accomplishing wonderful task by providing opportunity to the students of </string>
+    <string name="wrong_password_text">Invalid login credential, Please try again.</string>
+
+    <array name="fee_structure_entries">
+        <item>20000 (1 year)</item>
+        <item>12000 (6 months)</item>
+        <item>7000 (3 Months)</item>
+
+    </array>
+
+</resources>

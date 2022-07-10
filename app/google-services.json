@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "794915448346",
+    "firebase_url": "https://hostel-life-d0033-default-rtdb.firebaseio.com",
+    "project_id": "hostel-life-d0033",
+    "storage_bucket": "hostel-life-d0033.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:794915448346:android:1f2b96c9967c3b73f753a3",
+        "android_client_info": {
+          "package_name": "com.example.hostellife"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "794915448346-hj38livrhefglg0o0nie4eughgn5h9fi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAW9p7R9AWjo-Bjt0kjQAXhuqLrdMcPwcM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "794915448346-hj38livrhefglg0o0nie4eughgn5h9fi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

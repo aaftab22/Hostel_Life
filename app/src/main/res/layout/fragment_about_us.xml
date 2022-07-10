@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_column="2"
+    android:layout_row="4"
+    android:orientation="vertical"
+    tools:context=".AboutUsFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Our hostel is accomplishing wonderful task by providing opportunity to the students of Saurashtra through the medium of
+accommodation in huge city like Ahmadabad and encouraging them to pursue higher and better education."
+        android:layout_margin="10dp"
+        android:textSize="18sp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Our hostel is accomplishing wonderful task by providing opportunity to the students of Saurashtra through the medium of
+accommodation in huge city like Ahmadabad and encouraging them to pursue higher and better education."
+        android:layout_margin="10dp"
+        android:textSize="18sp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#009688"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hostels Facilities : "
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#009688"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="4" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dining Hall"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elevators(lift)"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Library"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GYM"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parking"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Free WiFi"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            />
+
+
+    </GridLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hostel_icon"
+        android:layout_margin="30dp"
+        android:padding="20dp"
+
+        />
+
+</LinearLayout>

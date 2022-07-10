@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddStudent"
+    android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/studentFrom_title_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Form"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <EditText
+            android:id="@+id/student_fullName_ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Full Name"
+            android:layout_margin="10dp"
+            android:layout_below="@id/studentFrom_title_ID"/>
+
+        <EditText
+            android:id="@+id/student_address_ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter full Address"
+            android:layout_margin="10dp"
+            android:layout_below="@id/student_fullName_ID"/>
+
+        <EditText
+            android:id="@+id/student_email_ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter EmailId"
+            android:layout_margin="10dp"
+            android:layout_below="@id/student_address_ID"/>
+
+        <EditText
+            android:id="@+id/student_contact_ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Mobile No"
+            android:layout_margin="10dp"
+            android:layout_below="@id/student_email_ID"/>
+
+        <EditText
+            android:id="@+id/student_collage_ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Collage Name"
+            android:layout_margin="10dp"
+            android:layout_below="@id/student_contact_ID"/>
+
+        <Button
+            android:id="@+id/insertStudent_BTN_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/student_collage_ID"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Add Student"
+            android:textSize="15sp" />
+
+</RelativeLayout>

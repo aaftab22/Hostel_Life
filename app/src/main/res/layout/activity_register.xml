@@ -111,7 +111,8 @@
             android:layout_height="wrap_content"
             android:text="Already have an account?"
             android:gravity="center" />
-      
+
+
     </LinearLayout>
     </ScrollView>
 

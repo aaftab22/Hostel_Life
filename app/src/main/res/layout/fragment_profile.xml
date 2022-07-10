@@ -16,34 +16,34 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/profile_image"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/male_profile_pic"
+            app:civ_border_color="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/profile_name_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_image"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
-            android:src="@drawable/admin_pic"
-            app:civ_border_color="@color/white"
-            app:civ_border_width="1dp" />
-
-        <TextView
-            android:id="@+id/profile_page_name_ID"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_below="@id/profile_image"
             android:text="Hardik"
-            android:layout_centerHorizontal="true"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/profile_email"
+            android:id="@+id/profile_email_ID"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/profile_page_name_ID"
+            android:layout_below="@id/profile_name_ID"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
@@ -54,11 +54,15 @@
             android:textSize="20sp" />
 
         <ImageView
+            android:id="@+id/profile_update_icon_ID"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/profile_email"
+            android:layout_below="@id/profile_email_ID"
             android:layout_alignParentEnd="true"
-            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
             android:src="@drawable/ic_baseline_edit_24" />
 
     </RelativeLayout>
@@ -83,12 +87,13 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/login_icon"
+            android:layout_toEndOf="@id/login_icon"
             android:padding="20dp"
             android:text="Rules &amp; Regulation"
             android:textColor="#8DA9C4"
             android:textSize="18sp"
             android:textStyle="italic" />
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -98,7 +103,7 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/aboustUs_layout_ID"
+        android:id="@+id/aboutUs_layout_ID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginVertical="8dp"
@@ -113,11 +118,10 @@
             android:padding="20dp"
             android:src="@drawable/ic_baseline_rule_24"
             />
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/faq_icon_ID"
+            android:layout_toEndOf="@id/faq_icon_ID"
             android:padding="20dp"
             android:text="About Us"
             android:textColor="#8DA9C4"
@@ -128,7 +132,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:padding="20dp"
-            android:src="@drawable/ic_baseline_arrow_forward_24"/>
+            android:src="@drawable/ic_baseline_arrow_forward_24"
+            />
     </RelativeLayout>
 
 

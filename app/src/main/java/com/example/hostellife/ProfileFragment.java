@@ -9,6 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -17,8 +20,11 @@ import android.widget.RelativeLayout;
  */
 public class ProfileFragment extends Fragment {
 
-    RelativeLayout rulesSection,abousUSSection;
+    RelativeLayout rulesSection,abousUsSection;
     ImageView updateProfileIcon;
+    TextView profileName,profileEmail;
+    FirebaseAuth firebaseAuth;
+
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -67,20 +73,35 @@ public class ProfileFragment extends Fragment {
         View view =  inflater.inflate(R.layout.fragment_profile, container, false);
 
         //initialization
-        rulesSection     = view.findViewById(R.id.rules_section_ID);
-        abousUSSection     = view.findViewById(R.id.aboustUs_layout_ID);
+        rulesSection = view.findViewById(R.id.rules_section_ID);
+        abousUsSection = view.findViewById(R.id.aboutUs_layout_ID);
+        updateProfileIcon = view.findViewById(R.id.profile_update_icon_ID);
+        profileName = view.findViewById(R.id.profile_name_ID);
+        profileEmail = view.findViewById(R.id.profile_email_ID);
+        firebaseAuth = FirebaseAuth.getInstance();
+        profileName.setText(firebaseAuth.getCurrentUser().getDisplayName());
 
-        //change to
+        //change to rules & regulation fragment
         rulesSection.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 getFragmentManager().beginTransaction().replace(R.id.framelayout_id,new rules_regulation_fragment()).commit();
             }
         });
-        abousUSSection.setOnClickListener(new View.OnClickListener() {
+
+        //change to about us fragment
+        abousUsSection.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 getFragmentManager().beginTransaction().replace(R.id.framelayout_id,new AboutUsFragment()).commit();
+            }
+        });
+
+        //to update the profile details
+        updateProfileIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getFragmentManager().beginTransaction().replace(R.id.framelayout_id,new ProfileFragment()).commit();
             }
         });
 

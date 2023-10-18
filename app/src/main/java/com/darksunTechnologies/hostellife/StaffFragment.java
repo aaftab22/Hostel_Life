@@ -1,25 +1,28 @@
-package com.example.hostellife;
+package com.darksunTechnologies.hostellife;
 
-import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.room.Room;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.RelativeLayout;
+
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link HomeFragment#newInstance} factory method to
+ * Use the {@link StaffFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class HomeFragment extends Fragment {
+public class StaffFragment extends Fragment {
 
-    RelativeLayout addStudent,addStaff;
+    ActionBar actionBar;
 
+    RecyclerView recyclerView;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -29,7 +32,7 @@ public class HomeFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public HomeFragment() {
+    public StaffFragment() {
         // Required empty public constructor
     }
 
@@ -39,11 +42,11 @@ public class HomeFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment HomeFragment.
+     * @return A new instance of fragment StaffFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static HomeFragment newInstance(String param1, String param2) {
-        HomeFragment fragment = new HomeFragment();
+    public static StaffFragment newInstance(String param1, String param2) {
+        StaffFragment fragment = new StaffFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -64,25 +67,18 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_staff, container, false);
+        recyclerView =  view.findViewById(R.id.staff_RV_ID);
 
-        addStaff = view.findViewById(R.id.addStaff_layout_ID);
-        addStudent = view.findViewById(R.id.addStudent_Layout_ID);
+        AppDatabase db = Room.databaseBuilder(view.getContext(),
+                AppDatabase.class, "HostelDatabase").allowMainThreadQueries().build();
+        staffDao staffDao = db.staffDao();
+        List<StaffModel> staff = staffDao.getAllStaff();
+        staffAdapter adapter = new staffAdapter(staff);
+        recyclerView.setAdapter(adapter);
 
-        addStaff.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(view.getContext(),AddStaff.class));
-            }
-        });
 
-        addStudent.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(view.getContext(),AddStudent.class));
-            }
-        });
 
-        return  view;
+        return view;
     }
 }

@@ -1,4 +1,4 @@
-package com.example.hostellife;
+package com.darksunTechnologies.hostellife;
 
 import android.os.Bundle;
 

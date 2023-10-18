@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.hostellife">
+    package="com.darksunTechnologies.hostellife">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -12,22 +12,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HostelLife">
         <activity
-            android:name=".forgetPasswordActivity"
+            android:name="com.darksunTechnologies.hostellife.forgetPasswordActivity"
             android:exported="false" />
         <activity
-            android:name=".registerActivity"
+            android:name="com.darksunTechnologies.hostellife.registerActivity"
             android:exported="false" />
         <activity
-            android:name=".loginForm"
+            android:name="com.darksunTechnologies.hostellife.loginForm"
             android:exported="false" />
         <activity
-            android:name=".updateDataStaff"
+            android:name="com.darksunTechnologies.hostellife.updateDataStaff"
             android:exported="false" />
         <activity
-            android:name=".updateData"
+            android:name="com.darksunTechnologies.hostellife.updateData"
             android:exported="false" />
         <activity
-            android:name=".SplashScreen"
+            android:name="com.darksunTechnologies.hostellife.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,13 +36,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AddStaff"
+            android:name="com.darksunTechnologies.hostellife.AddStaff"
             android:exported="false" />
         <activity
-            android:name=".AddStudent"
+            android:name="com.darksunTechnologies.hostellife.AddStudent"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.darksunTechnologies.hostellife.MainActivity"
             android:exported="false" />
     </application>
 

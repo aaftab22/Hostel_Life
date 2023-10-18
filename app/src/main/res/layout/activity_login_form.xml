@@ -97,13 +97,13 @@
                 android:textCursorDrawable="@drawable/cursor_color"
                 android:textSize="20sp" />
 
-            <ImageView
-                android:id="@+id/password_hide_icon_ID"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="280dp"
-                android:src="@drawable/hide_password_icon" />
+<!--            <ImageView-->
+<!--                android:id="@+id/password_hide_icon_ID"-->
+<!--                android:layout_width="20dp"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginLeft="280dp"-->
+<!--                android:src="@drawable/hide_password_icon" />-->
 
         </RelativeLayout>
 
@@ -131,7 +131,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Forget Password ?"
-            android:textSize="15.5sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/or_id"

@@ -1,13 +1,13 @@
-package com.example.hostellife;
+package com.darksunTechnologies.hostellife;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-@Entity (tableName = "Staff_details")
-public class StaffModel {
-    @PrimaryKey(autoGenerate = true)
-    public int staffId;
+@Entity (tableName = "Student_details")
+public class StudentModel {
+    @PrimaryKey (autoGenerate = true)
+    public int studentId;
 
     @ColumnInfo(name = "full_name")
     public String fullname;
@@ -21,22 +21,22 @@ public class StaffModel {
     @ColumnInfo(name = "contact_no")
     public String contactno;
 
-    @ColumnInfo(name = "post_name")
-    public String postname;
+    @ColumnInfo(name = "collage_name")
+    public String collagename;
 
-    public StaffModel(String fullname, String address, String email, String contactno) {
+    public StudentModel(String fullname, String address, String email, String contactno) {
         this.fullname = fullname;
         this.address = address;
         this.email = email;
         this.contactno = contactno;
     }
 
-    public int getStaffId() {
-        return staffId;
+    public int getStudentId() {
+        return studentId;
     }
 
-    public void setStaffId(int staffId) {
-        this.staffId = staffId;
+    public void setStudentId(int studentId) {
+        this.studentId = studentId;
     }
 
     public String getFullname() {
@@ -71,11 +71,11 @@ public class StaffModel {
         this.contactno = contactno;
     }
 
-    public String getPostname() {
-        return postname;
+    public String getCollagename() {
+        return collagename;
     }
 
-    public void setPostname(String postname) {
-        this.postname = postname;
+    public void setCollagename(String collagename) {
+        this.collagename = collagename;
     }
 }

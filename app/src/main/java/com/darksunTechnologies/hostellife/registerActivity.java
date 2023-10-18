@@ -1,10 +1,11 @@
-package com.example.hostellife;
+package com.darksunTechnologies.hostellife;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -45,7 +46,6 @@ public class registerActivity extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseFirestore = FirebaseFirestore.getInstance();
 
-        //to sent data to firebase
         signupBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -64,11 +64,14 @@ public class registerActivity extends AppCompatActivity {
                                         public void onComplete(@NonNull Task<DocumentReference> task) {
                                         if (task.isSuccessful())
                                         {
-                                        Intent mainIntent = new Intent(registerActivity.this,MainActivity.class);
-                                        startActivity(mainIntent);
-                                        finish();
+                                            Log.d("heyAaftab", "Signup button clicked");
+                                            Toast.makeText(registerActivity.this, "Done", Toast.LENGTH_SHORT).show();
+                                            Intent mainIntent = new Intent(registerActivity.this,MainActivity.class);
+                                            startActivity(mainIntent);
+                                            finish();
                                         }
                                         else {
+                                            Log.d("heyAaftab", "Signup button clicked 2");
                                             String err = task.getException().getMessage();
                                             Toast.makeText(registerActivity.this, err, Toast.LENGTH_SHORT).show();
                                         }
@@ -77,6 +80,7 @@ public class registerActivity extends AppCompatActivity {
                                 }
                                 else
                                 {
+                                    Log.d("heyAaftab", "Signup button clicked 3");
                                     String err = task.getException().getMessage();
                                     Toast.makeText(registerActivity.this, err, Toast.LENGTH_SHORT).show();
                                 }

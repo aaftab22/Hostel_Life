@@ -13,6 +13,7 @@
     <string name="ruleNoSix">Students are not allowed to organize any group activities in their room.</string>
     <string name="about_US">Our hostel is accomplishing wonderful task by providing opportunity to the students of </string>
     <string name="wrong_password_text">Invalid login credential, Please try again.</string>
+    <string name="already_have_an_account">Already have an account?</string>
 
     <array name="fee_structure_entries">
         <item>20000 (1 year)</item>

@@ -4,12 +4,13 @@ plugins {
 }
 
 android {
-    compileSdk 31
+    compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.hostellife"
+        applicationId "com.darksunTechnologies.hostellife"
         minSdk 21
-        targetSdk 31
+        //noinspection EditedTargetSdkVersion
+        targetSdk 33
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"

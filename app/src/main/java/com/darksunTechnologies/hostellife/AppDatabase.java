@@ -1,4 +1,4 @@
-package com.example.hostellife;
+package com.darksunTechnologies.hostellife;
 
 import androidx.room.Database;
 import androidx.room.RoomDatabase;
